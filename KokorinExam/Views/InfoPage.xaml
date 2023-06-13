@@ -9,12 +9,16 @@
       Title="InfoPage">
 
     <Grid>
+        <Button Content="Выйти" Command="{Binding SignOut}" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" >
-            <!--<Image Source="{Binding AddUserWorker.Photo}" Width="150" Height="150" Margin="10"/>-->
-            <Label Content="{Binding User.Surname}" MinWidth="200" MinHeight="15"/>
-            <Label Content="{Binding User.Name}"/>
-            <Label Content="{Binding User.Patronymic}"/>
+            <Image Source="{Binding User.Photo}" Width="150" Height="150" Margin="10"/>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="{Binding User.Surname}"/>
+                <Label Content="{Binding User.Name}"/>
+                <Label Content="{Binding User.Patronymic}"/>
+            </StackPanel>
             <Label Content="{Binding User.Position}"/>
+            <!--<Button Content="удоли)" Command="{Binding Del}"/>-->
         </StackPanel>
     </Grid>
 </Page>

@@ -24,8 +24,7 @@ namespace KokorinExam.Views
         public SignInPage(MainWindowVM mainVM)
         {
             InitializeComponent();
-            DataContext = new SignInPageVM(mainVM);
+            DataContext = new SignInPageVM(mainVM, capchaCanvas);
         }
-
     }
 }

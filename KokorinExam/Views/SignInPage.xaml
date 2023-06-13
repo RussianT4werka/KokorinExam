@@ -14,6 +14,13 @@
             <TextBox Text="{Binding Login}" MinWidth="200"/>
             <Label Content="Пароль"/>
             <TextBox Text="{Binding Password}"/>
+            <StackPanel HorizontalAlignment="Center"
+                        Visibility="{Binding CapchaVisible}">
+                <Label HorizontalAlignment="Center" FontWeight="Bold" Content="Введите капчу"/>
+                <Canvas x:Name="capchaCanvas" 
+                        Height="60" Width="200" />
+                <TextBox Text="{Binding CapchaText}"/>
+            </StackPanel>
             <Button Content="Войти" Command="{Binding SignIn}"/>
         </StackPanel>
     </Grid>

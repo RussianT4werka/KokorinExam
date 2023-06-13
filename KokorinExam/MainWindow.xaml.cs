@@ -28,23 +28,24 @@ namespace KokorinExam
         {
             InitializeComponent();
             DataContext = new MainWindowVM();
-            //    string file = @"C:\Users\Student\Desktop\examKokorin\20.csv";
-            //    string dirImage = @"C:\Users\Student\Desktop\examKokorin\Images\";
-            //    string[] rows = File.ReadAllLines(file).Skip(1).ToArray();
-            //    var spl = new char[] { ';' };
 
-            //    foreach (var row in rows)
+            //string file = @"C:\Users\Student\Desktop\examKokorin\20.csv";
+            //string dirImage = @"C:\Users\Student\Desktop\examKokorin\Images\";
+            //string[] rows = File.ReadAllLines(file).Skip(1).ToArray();
+            //var spl = new char[] { ';' };
+
+            //foreach (var row in rows)
+            //{
+            //    var cols = row.Split(spl, StringSplitOptions.RemoveEmptyEntries);
+            //    if (cols.Length == 8)
             //    {
-            //        var cols = row.Split(spl, StringSplitOptions.RemoveEmptyEntries);
-            //        if (cols.Length == 8)
-            //        {
-            //            User user = examKokorinContext.GetInstance().Users.FirstOrDefault(s => s.Surname == "Дмитриева");
-            //            user.Photo = File.ReadAllBytes(dirImage + cols[7]);
-            //        }
+            //        User user = examKokorinContext.GetInstance().Users.FirstOrDefault(s => s.Surname == cols[1]);
+            //        user.Photo = File.ReadAllBytes(dirImage + cols[7]);
             //    }
-            //    examKokorinContext.GetInstance().SaveChanges();
             //}
+            //examKokorinContext.GetInstance().SaveChanges();
         }
-
     }
+
+    
 }

@@ -21,10 +21,10 @@ namespace KokorinExam.Views
     /// </summary>
     public partial class InfoPage : Page
     {
-        public InfoPage(Models.User user)
+        public InfoPage(Models.User user, MainWindowVM mainVM)
         {
             InitializeComponent();
-            DataContext = new InfoPageVM(user);
+            DataContext = new InfoPageVM(user, mainVM);
         }
     }
 }
